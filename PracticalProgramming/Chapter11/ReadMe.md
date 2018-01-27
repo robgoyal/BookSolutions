@@ -271,11 +271,21 @@ def sparse_dot(vector1, vector2):
     Return an integer containing the result of
     the dot product of vectors, vector1 and vector2.
 
-    >>> sparee_dot()
+    >>> sparse_dot({0: 1, 6: 3}, {0: 3, 2: 4, 6: 2})
+    9
+    '''
+
     dot_product = 0
+
+    # Create set of same keys from both dictionaries
     keys = set(vector1).intersection(set(vector2))
 
     for key in keys:
         dot_product += vector1[key] * vector2[key]
 
     return dot_product
+
+# Subquestion c
+
+# We would need to ask what the end of the list would be represented by
+```
